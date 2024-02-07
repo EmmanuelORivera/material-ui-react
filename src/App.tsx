@@ -1,4 +1,5 @@
-import { Button, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
+import { blue, red } from '@mui/material/colors'
 
 const App = () => {
   return (
@@ -13,6 +14,13 @@ const App = () => {
       </Typography>
       <br />
       <Button variant="contained">My first button</Button>
+
+      <Box sx={{ padding: '50px', color: 'blue' }}>
+        This is a box component
+        <Box color="red" component="span">
+          Inside of a box
+        </Box>
+      </Box>
     </Container>
   )
 }

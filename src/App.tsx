@@ -1,11 +1,11 @@
-import { Button } from '@mui/material'
+import { Button, Container } from '@mui/material'
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <h1>App</h1>
       <Button variant="contained">My first button</Button>
-    </div>
+    </Container>
   )
 }
 
